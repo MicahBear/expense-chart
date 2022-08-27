@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Expenses chart component</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="balance-title-amount">
+        <span class="balance-title"> My balance </span>
+        <span class="balance-amount">$921.48</span>
+        <div class="circles">CIRCLES HERE</div>
+      </div>
+      <div class="info-card">
+        <h3>Spending - Last 7 days</h3>
+        <div>
+          <canvas
+            id="myChart"
+            width="400"
+            height="100"
+            aria-label="Hello ARIA World"
+            role="img"
+          ></canvas>
+        </div>
+        <hr />
+        <div class="bottom-container">
+          <div class="bottom-left">
+            <span>Total this month</span>
+            <h3>$478.33</h3>
+          </div>
+          <div class="bottom-right">
+            <span>+2.4%</span>
+            <span>from last month</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- My balance $921.48 Spending - Last 7 days mon tue wed thu fri sat sun Total
+    this month $478.33 +2.4% from last month -->
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Micah Elm</a>.
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
