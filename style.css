@@ -2,6 +2,17 @@
   box-sizing: border-box;
 }
 
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: cetner;
+  width: 535px;
+  height: 500px;
+  margin: 0 auto;
+  padding-top: 25rem;
+}
+
 .balance-title-amount {
   border: 1px solid blue;
 }
